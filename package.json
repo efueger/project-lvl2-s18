@@ -1,0 +1,40 @@
+{
+  "name": "gendiff_alekgit",
+  "version": "1.0.2",
+  "description": "Command-line application Gendiff (compares two configuration files and shows a difference)",
+  "main": "index.js",
+  "bin": {
+    "gendiff": "dist/bin/gendiff.js"
+  },
+  "scripts": {
+    "babel": "babel",
+    "babel-node": "babel-node",
+    "eslint": "eslint src",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alekgit/project-lvl2-s18.git"
+  },
+  "author": "alekgit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alekgit/project-lvl2-s18/issues"
+  },
+  "homepage": "https://github.com/alekgit/project-lvl2-s18#readme",
+  "dependencies": {
+    "commander": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-env": "*",
+    "babel-preset-stage-0": "*",
+    "babel-eslint": "*",
+    "eslint": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-import": "*",
+    "jest": "*"
+  }
+}
